@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .userItem{
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            width: 200px;
+            box-sizing: border-box;
+            background-color: blueviolet;
+            color: white;
+            font-family: monospace;
+            margin: 100px auto;
+            transform-origin: 50% 50%;
+            text-align: center;
+            padding: 20px;
+        }
+            .imageConteiner{
+
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                text-align: center;
+
+            }
+        .imageConteiner>img{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            object-fit: cover;
+            width: inherit;
+            height: inherit;
+            transform: translate(-50%,-50%);
+        }
+        #usersList{
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .initials{
+            font-family: sans-serif;
+            font-size: 40px;
+        }
+
+    </style>
+</head>
+<body>
+<ul id="usersList">
+</ul>
+<script src="assets/js/index.js"></script>
+</body>
+</html>
